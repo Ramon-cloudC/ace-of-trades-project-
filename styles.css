@@ -1,0 +1,198 @@
+/*Universal Styles*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  html {
+    font-family: "Righteous", sans-serif;
+    font-size: 16px;
+    /*list of colors:
+    #295f4e, (dark green)
+    #6db193, (light green)
+    */ 
+  }
+  
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  /*Header*/
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    border-bottom: 2px solid #6db193;
+  }
+  
+  .navbar h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    background-color: black;
+    width: 100%;
+    
+  }
+  
+  .navbar ul { 
+    display: flex;
+    gap: 220px ;
+  }
+  
+  .navbar ul li {
+    list-style: none;
+    margin-top: 70px;
+    width: 100px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .navbar ul li a:hover {
+    color: #6db193;
+    transition: color 0.2s;
+  }
+  
+  /*Main section*/
+  .banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    grid-template-rows: 1fr;
+    margin-top: 100px;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .banner h1 {
+    font-size: 3.8rem;
+    padding: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .banner .h1-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid #6db193;
+  }
+  
+  .banner .paragraph {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .banner .paragraph ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .banner .paragraph ul li {
+    list-style: none;
+    letter-spacing: 2px;
+  }
+  
+  /* Interest and Download Section */
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    padding-bottom: 30px;
+    border-top: 1px solid #6db193;
+  }
+  
+  .earn {
+    font-size: 2.5rem;
+    margin-top: 70px;
+  }
+  
+  .earn span {
+     font-family: "Codystar", sans-serif;
+     color: #6db193;
+     font-weight: 800;
+  }
+  
+  .download {
+    font-size: 1.5rem;
+  }
+  
+  
+  .container .app {
+    text-align: center;
+  }
+  
+  .container .app h4 {
+    margin-top: 70px;
+  }
+  
+  .container .app button {
+    text-align: center;
+    height: 2rem;
+    background-color: #6db193;
+    color: white;
+    font-family: "Righteous", sans-serif;
+    border: none;
+    border-radius: 19px;
+    margin-top: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+  
+  /*Testimonials Section*/
+  
+  .testimonials {
+    margin-top: 50px;
+  }
+  
+  .testimonials h4 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+  }
+  
+  .profile {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; 
+    /* this sets up the reverse :hover effect (box-shadow)*/
+    box-shadow: 0 0 0 #6db193;
+    transition: box-shadow 0.2s;  
+  }
+  
+  .profile:hover {
+    box-shadow: 0 0  10px 1px #6db193;
+    transition: box-shadow 0.2s;
+  }
+  
+  .reviews {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+  }
+  
+  .description {
+    width: 200px;
+    margin-top: 20px;
+    border: solid 1px #6db193;
+    border-radius: 9px;
+    padding: 5px;
+    text-align: center;
+  }
+  
